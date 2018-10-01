@@ -5,8 +5,6 @@
     function BigItemController()
     {
         var self = this;
-
-        
     }
 
     app.component('bigItem', {

@@ -15,6 +15,6 @@
         angular.bootstrap(div, ['gameFixtures']);
         
         console.log('script setup done');
-    }, 1);
+    }, 1); // WHY SHOULD THERE BE A TIME OUT HERE?
     console.log('x');
 })();
