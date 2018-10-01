@@ -10,7 +10,7 @@
     }
 
     app.component('testItem', {
-        templateUrl: '/assets/testItem/testItem.html?v=' + guid(),
+        templateUrl: 'assets/testItem/testItem.html?v=' + guid(),
         controller: TestItemController,
         
     });

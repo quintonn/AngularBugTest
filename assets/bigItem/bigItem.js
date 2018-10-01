@@ -8,7 +8,7 @@
     }
 
     app.component('bigItem', {
-        templateUrl: '/assets/bigItem/bigItem.html?v=' + guid(),
+        templateUrl: 'assets/bigItem/bigItem.html?v=' + guid(),
         controller: BigItemController,
         
     });
