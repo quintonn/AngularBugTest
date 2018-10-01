@@ -38,7 +38,7 @@
                 {
                     console.log('script setup done, before bootstrap');
                     var div = document.getElementById('myApp');
-                    angular.bootstrap(div, ['gameFixtures']);
+                    angular.bootstrap(div, ['gameFixtures'], { strictDi: true, debugInfoEnabled: true });
 
                     console.log('script setup done, after bootstrap');
                 }, 1); // WHY SHOULD THERE BE A TIME OUT HERE?
