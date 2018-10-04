@@ -1,7 +1,7 @@
 ﻿(function ()
 {
     var scripts = [];
-    scripts.push('app.route.js');
+    //scripts.push('app.route.js');
     scripts.push('assets/testItem/testItem.js');
     scripts.push('assets/bigItem/bigItem.js');
     
@@ -12,7 +12,10 @@
         console.log('got angular');
         var app = angular.module('gameFixtures', ['ngRoute']);
         
-        return addDynamicScript("scripts/angular-route.1.7.2.min.js?v=" + guid(), "js")
+        return addDynamicScript("scripts/angular-route.1.7.2.min.js?v=" + guid(), "js").then(function()
+        {
+            return addDynamicScript("app.route.js");
+        });
     })
         .then(function ()
         {
